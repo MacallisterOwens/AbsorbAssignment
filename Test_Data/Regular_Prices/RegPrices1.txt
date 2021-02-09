@@ -1,0 +1,22 @@
+﻿Apple,0.75
+Bacon,2.99
+Bagel,1.49
+Carrots,1.29
+Coffee,4.99
+Milk (1 gal),1.99
+Salsa,1.49
+Vanilla Extract,1.99
+Yogurt,1.99
+Asparagus,2.45
+Lettuce,5.00
+Frozen Burritos,11.99
+Veggie Burgers,10.39
+Frozen Pizza,12.99
+Hair Gel (Normal),10.99
+Hair Gel (Fancy),23.00
+Hummus,8.99
+AA Batteries (6pk),4.99
+Gummy Bears,5.99
+Garlic,0.89
+Pear,0.80
+Toothpaste,8.00

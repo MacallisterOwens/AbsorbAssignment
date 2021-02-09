@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <StartupObject>AbsorbAssignment.CheckoutKiosk</StartupObject>
+    <Configurations>Debug;Release;FinalProduct</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>true</Optimize>
+    <DocumentationFile>C:\Users\Macal\source\repos\AbsorbAssignment\AbsorbAssignment.xml</DocumentationFile>
+    <OutputPath>bin\FinishedProject\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FinalProduct|AnyCPU'">
+    <OutputPath>bin\FinalProduct\</OutputPath>
+    <DocumentationFile>bin\FinalProduct\AbsorbAssignment.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>

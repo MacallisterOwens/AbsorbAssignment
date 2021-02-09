@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "AbsorbAssignment": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Macal\\source\\repos\\AbsorbAssignment\\Test_Data\\Customer_Carts\\CustBasket1.txt C:\\Users\\Macal\\source\\repos\\AbsorbAssignment\\Test_Data\\Regular_Prices\\RegPrices1.txt"
+    },
+    "WithPromos": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Macal\\source\\repos\\AbsorbAssignment\\Test_Data\\Customer_Carts\\CustBasket1.txt C:\\Users\\Macal\\source\\repos\\AbsorbAssignment\\Test_Data\\Regular_Prices\\RegPrices1.txt C:\\Users\\Macal\\source\\repos\\AbsorbAssignment\\Test_Data\\Promotional_Prices\\PromoPrices1.txt"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+﻿Apple,0.50
+Hummus,8.98
+Gummy Bears,1.99
+Lettuce,3.99
+Hair Gel (Fancy),11.99
+Toothpaste,7.00

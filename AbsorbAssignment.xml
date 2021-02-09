@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AbsorbAssignment</name>
+    </assembly>
+    <members>
+        <member name="T:AbsorbAssignment.CheckoutKiosk">
+            <summary>
+            This class represents the checkout kiosk for GroceryCO. It begins the transaction and prints the results.
+            </summary>
+        </member>
+        <member name="T:AbsorbAssignment.CustomerBasket">
+            <summary>
+            This class represents the items a customer scans at the kiosk, i.e. the items in their basket
+            </summary>
+        </member>
+        <member name="F:AbsorbAssignment.CustomerBasket.itemsDict">
+            <summary>
+            A dictionary which contains a mapping from the item's name and the number of times that item was scanned
+            </summary>
+        </member>
+        <member name="M:AbsorbAssignment.CustomerBasket.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AbsorbAssignment.CustomerBasket"/> class and does not populate itemsDict.
+            </summary>
+        </member>
+        <member name="M:AbsorbAssignment.CustomerBasket.#ctor(System.String)">
+            <summary>Initializes a new instance of the <see cref="T:AbsorbAssignment.CustomerBasket" /> class.
+            Populates the itemsDict with the items given in the file pointed to by fPath</summary>
+            <param name="fPath">The path to the file containing the customer's scanned items</param>
+        </member>
+        <member name="M:AbsorbAssignment.CustomerBasket.GetCustomerBasket">
+            <summary>
+            Returns a dictionary representing the customer's basket.
+            </summary>
+            <returns>A dictionary which contains a mapping from the item's name and the number of times that item was scanned</returns>
+        </member>
+        <member name="M:AbsorbAssignment.CustomerBasket.ReadInItems(System.String)">
+            <summary>
+            Reads in the file given by fPath and populates the itemsDict with the items read in.
+            </summary>
+            <param name="fPath">The path to the file containing the customer's scanned items.</param>
+            <exception cref="T:System.Exception">File path given does not exist or is incorrect</exception>
+        </member>
+        <member name="T:AbsorbAssignment.PriceCatalogs">
+            <summary>
+            This class represents both the current price catalog and sale price catalog of GroceryCO
+            </summary>
+        </member>
+        <member name="F:AbsorbAssignment.PriceCatalogs.currPriceCatalog">
+            <summary>
+            A dictionary which contains a mapping from the item's name and its current price
+            </summary>
+        </member>
+        <member name="F:AbsorbAssignment.PriceCatalogs.salePriceCatalog">
+            <summary>
+            A dictionary which contains a mapping from the item's name and its sale price (if applicable)
+            </summary>
+        </member>
+        <member name="M:AbsorbAssignment.PriceCatalogs.#ctor(System.String)">
+            <summary>Initializes a new instance of the <see cref="T:AbsorbAssignment.PriceCatalogs" /> class and populates only the current price catalog via the file path provided.</summary>
+            <param name="currPricePath">The path to the file which the current price catalog will be read from</param>
+            <exception cref="T:System.IO.FileNotFoundException">Could not access/find {currPricePath}</exception>
+        </member>
+        <member name="M:AbsorbAssignment.PriceCatalogs.#ctor(System.String,System.String)">
+            <summary>Initializes a new instance of the <see cref="T:AbsorbAssignment.PriceCatalogs" /> class and populates the current price catalog and the sale price catalog via the file paths provided.</summary>
+            <param name="currPricePath">The path to the file which the current price catalog will be read from</param>
+            <param name="salePricePath">The path to the file which the sale price catalog will be read from</param>
+            <exception cref="T:System.IO.FileNotFoundException">Could not access/find {currPricePath}</exception>
+        </member>
+        <member name="M:AbsorbAssignment.PriceCatalogs.GetCurrPriceCatalog">
+            <summary>Gets the current price catalog.</summary>
+            <returns>Returns the current price catalog</returns>
+        </member>
+        <member name="M:AbsorbAssignment.PriceCatalogs.GetSalePriceCatalog">
+            <summary>Gets the sale price catalog.</summary>
+            <returns>Returns the sale price catalog</returns>
+        </member>
+    </members>
+</doc>
