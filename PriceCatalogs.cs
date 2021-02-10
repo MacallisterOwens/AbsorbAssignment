@@ -19,9 +19,8 @@ namespace AbsorbAssignment
         /// </summary>
         private Dictionary<string, float> salePriceCatalog;
 
-        // Assumes that the text doc is csv with no spaces formatted as "{itemName},{price}/n{itemName},{price}/n..."
-
-        /// <summary>Initializes a new instance of the <see cref="PriceCatalogs" /> class and populates only the current price catalog via the file path provided.</summary>
+        /// <summary>Initializes a new instance of the <see cref="PriceCatalogs" /> class and populates only the current price catalog via the file path provided.
+        /// Assumes that the text doc is csv with no spaces formatted as "{itemName},{price}/n{itemName},{price}/n..."</summary>
         /// <param name="currPricePath">The path to the file which the current price catalog will be read from</param>
         /// <exception cref="FileNotFoundException">Could not access/find {currPricePath}</exception>
         public PriceCatalogs(string currPricePath)
@@ -55,7 +54,8 @@ namespace AbsorbAssignment
             }
         }
 
-        /// <summary>Initializes a new instance of the <see cref="PriceCatalogs" /> class and populates the current price catalog and the sale price catalog via the file paths provided.</summary>
+        /// <summary>Initializes a new instance of the <see cref="PriceCatalogs" /> class and populates the current price catalog and the sale price catalog via the file paths provided.
+        /// Assumes that the text doc is csv with no spaces formatted as "{itemName},{price}/n{itemName},{price}/n..."</summary>
         /// <param name="currPricePath">The path to the file which the current price catalog will be read from</param>
         /// <param name="salePricePath">The path to the file which the sale price catalog will be read from</param>
         /// <exception cref="FileNotFoundException">Could not access/find {currPricePath}</exception>
